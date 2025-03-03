@@ -9,4 +9,4 @@ Simple Banking System
 4. Run BankAccount.class by running "java BankAccount" in the terminal
 5. Follow the directions in the temrinal
 
-* Please note that you must have Java 17+ working to compile and run this code.
+Note: Please note that you must have Java 17+ working to compile and run this code.
