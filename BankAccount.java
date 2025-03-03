@@ -11,6 +11,8 @@ public class BankAccount {
 
         // Setup for new account
         BankAccount newAccount = null;
+        newAccount = new BankAccount();
+        createAccount(newAccount);
 
         while (true) {
             try {
