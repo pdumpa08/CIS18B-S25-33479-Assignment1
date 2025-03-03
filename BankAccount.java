@@ -70,16 +70,16 @@ public class BankAccount {
 
     public static void depositMoney(BankAccount newAccount) {
         // Make deposit with user's input
-        float depositAmount = -1
+        float depositAmount = -1;
         while (depositAmount < 0) {
-            // Error check
-            if (depositAmount < 0) {
-                System.out.println("Please input a positive number.")
-            }
             // Get user's input
             Scanner Menu = new Scanner(System.in);
             System.out.print("Enter amount to deposit: ");
             depositAmount = Menu.nextFloat();
+            // Error check
+            if (depositAmount < 0) {
+                System.out.println("Please input a positive number.");
+            }
         }
 
         newAccount.balance += depositAmount;
@@ -88,16 +88,16 @@ public class BankAccount {
 
     public static void withdrawMoney(BankAccount newAccount) {
         // Make withdrawal with user's input
-        float withdrawalAmount = -1
+        float withdrawalAmount = -1;
         while (withdrawalAmount < 0) {
-            // Error check
-            if (withdrawalAmount < 0) {
-                System.out.println("Please input a positive number.")
-            }
             // Get user's input
             Scanner Menu = new Scanner(System.in);
             System.out.print("Enter amount to withdraw: ");
             withdrawalAmount = Menu.nextFloat();
+            // Error check
+            if (withdrawalAmount < 0) {
+                System.out.println("Please input a positive number.");
+            }
         }
 
         // Insufficient funds check
